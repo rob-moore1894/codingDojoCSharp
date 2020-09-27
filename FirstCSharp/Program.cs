@@ -9,10 +9,12 @@ namespace FirstCSharp
             string name = "Rob"; 
             Random rand = new Random(); 
             int randAge = rand.Next(1,101);
-            if(randAge == 1){
-                Console.WriteLine($"My name is {name}, I am {randAge} year old");
-            } else {
-                Console.WriteLine($"My name is {name}, I am {randAge} years old");
+            for (int i = 0; i < 10; i++){
+                if(randAge == 1){
+                    Console.WriteLine($"My name is {name}, I am {randAge} year old");
+                } else {
+                    Console.WriteLine($"My name is {name}, I am {randAge} years old");
+                }
             }
         }
     }
