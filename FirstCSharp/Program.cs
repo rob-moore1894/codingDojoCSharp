@@ -6,7 +6,14 @@ namespace FirstCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string name = "Rob"; 
+            Random rand = new Random(); 
+            int randAge = rand.Next(1,101);
+            if(randAge == 1){
+                Console.WriteLine($"My name is {name}, I am {randAge} year old");
+            } else {
+                Console.WriteLine($"My name is {name}, I am {randAge} years old");
+            }
         }
     }
 }
