@@ -1,0 +1,13 @@
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\bin\Debug\netcoreapp3.1\CSharpFundamentals.exe
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\bin\Debug\netcoreapp3.1\CSharpFundamentals.deps.json
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\bin\Debug\netcoreapp3.1\CSharpFundamentals.runtimeconfig.json
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\bin\Debug\netcoreapp3.1\CSharpFundamentals.runtimeconfig.dev.json
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\bin\Debug\netcoreapp3.1\CSharpFundamentals.dll
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\bin\Debug\netcoreapp3.1\CSharpFundamentals.pdb
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\obj\Debug\netcoreapp3.1\CSharpFundamentals.csprojAssemblyReference.cache
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\obj\Debug\netcoreapp3.1\CSharpFundamentals.AssemblyInfoInputs.cache
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\obj\Debug\netcoreapp3.1\CSharpFundamentals.AssemblyInfo.cs
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\obj\Debug\netcoreapp3.1\CSharpFundamentals.csproj.CoreCompileInputs.cache
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\obj\Debug\netcoreapp3.1\CSharpFundamentals.dll
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\obj\Debug\netcoreapp3.1\CSharpFundamentals.pdb
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\CSharpFundamentals\obj\Debug\netcoreapp3.1\CSharpFundamentals.genruntimeconfig.cache
