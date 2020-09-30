@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic; 
 
 namespace Algorithms
 {
@@ -23,6 +24,40 @@ namespace Algorithms
             }
             Console.WriteLine("false");
             return false; 
+        }
+
+        
+
+        public static void RemoveDups(List<int> numList){
+            //Given a sorted List, return a NEW List that doesn't have any duplicate values
+            foreach(int item in numList)
+            {
+                Console.WriteLine(item);
+            }
+            for(int i = 0; i < numList.Count; i++)
+            {
+                for(i = 0; i < numList.Count; i++)
+                {
+                    if(numList[i] == numList.Count)
+                    {
+                        Console.WriteLine(numList[i]);
+                    }
+                    else
+                    {
+                        if(numList[i] == numList[i+1])
+                        {
+                            numList.RemoveAt(i);
+                        }
+                    }
+
+                }
+            }
+            Console.WriteLine("Here Goes Nothing:");
+            foreach(int item in numList)
+            {
+                Console.WriteLine(item);
+            }
+
         }
         
         static void Main(string[] args)
