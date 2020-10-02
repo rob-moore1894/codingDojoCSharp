@@ -52,17 +52,21 @@ namespace Algorithms
 
                 }
             }
-            Console.WriteLine("Here Goes Nothing:");
             foreach(int item in numList)
             {
                 Console.WriteLine(item);
             }
 
         }
+
+        // public static int[] triangleCentroid(int[,] arr){
+        
+        // }
         
         static void Main(string[] args)
         {
-            BinarySearch(new int[] { 2, 3, 4, 10, 40 }, 11); 
+            // BinarySearch(new int[] { 2, 3, 4, 10, 40 }, 11); 
+            // triangleCentroid(new int[,] {{10,0}, {-1,-10}, {2,4}});
         }
     }
 }
