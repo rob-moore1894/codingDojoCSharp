@@ -39,11 +39,16 @@ class Human {
 
             // Build Attack method
             // Reduce the health of a Human object that is passed as a parameter. The damage done should be 5 * strength (5 points of damage to the attacked, for each 1 point of strength of the attacker). This method should return the remaining health of the target object.
-            public int Attack(Human target){
+            public virtual int Attack(Human target){
                 int damageDealt = this.Strength * 5; 
                 target.health = target.health - damageDealt;
                 Console.WriteLine($"{this.Name} attacked {target.Name} and reduced {target.Name}'s health by {damageDealt}.\n{this.Name} health = {this.Health}\n{target.Name} health = {target.Health}");  
                 return target.Health; 
+            }
+
+            public void Display(){
+                Console.WriteLine($"Name = {this.Name}\nStrength = {this.Strength}\nIntelligence = {this.Intelligence}\nDexterity = {this.Dexterity}\nHealth = {this.Health}"
+                );
             }
         }
 }
