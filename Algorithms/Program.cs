@@ -58,15 +58,11 @@ namespace Algorithms
             }
 
         }
-
-        // public static int[] triangleCentroid(int[,] arr){
-        
-        // }
         
         static void Main(string[] args)
         {
             // BinarySearch(new int[] { 2, 3, 4, 10, 40 }, 11); 
-            // triangleCentroid(new int[,] {{10,0}, {-1,-10}, {2,4}});
+            LinkedList list
         }
     }
 }
