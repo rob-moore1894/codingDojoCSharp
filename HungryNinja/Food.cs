@@ -2,17 +2,21 @@ using System;
 
 namespace HungryNinja
 {
-    class Food {
-        public string Name; 
-        public int Calories; 
-        public bool IsSpicy; 
-        public bool IsSweet; 
+    class Food : IConsumable
+    {
+        public string Name {get; set;} 
+        public int Calories {get; set;} 
+        public bool IsSpicy {get; set;} 
+        public bool IsSweet {get; set;} 
+        public string GetInfo(){
+            return $"{Name} (Food). Calories: {Calories}. Spicy?: {IsSpicy}, Sweet?: {IsSweet}"; 
+        }
 
-        public Food(string name, int calories, bool isSpicy, bool isSweet){
+        public Food(string name, int calories, bool spicy, bool sweet){
             Name = name; 
             Calories = calories;
-            IsSpicy = isSpicy; 
-            IsSweet = isSweet; 
+            IsSpicy = spicy; 
+            IsSweet = sweet; 
         }
     }
 }
