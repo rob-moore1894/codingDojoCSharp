@@ -7,9 +7,9 @@ namespace Portfolio.Controllers
         [HttpGet]
         [Route("contact")]
 
-        public string Contact()
+        public ViewResult Contact()
         {
-            return "This is my Contact!"; 
+            return View(); 
         }
     }
 }

@@ -7,9 +7,9 @@ namespace Portfolio.Controllers
         [HttpGet]
         [Route("projects")]
 
-        public string Projects()
+        public ViewResult Projects()
         {
-            return "These are my projects"; 
+            return View(); 
         }
     }
 }

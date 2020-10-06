@@ -29,3 +29,5 @@ C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.Views.pdb
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.csproj.CopyComplete
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Razor\Views\Index\Index.cshtml.g.cs
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Contact.cshtml.g.cs
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Razor\Views\Projects\Projects.cshtml.g.cs
