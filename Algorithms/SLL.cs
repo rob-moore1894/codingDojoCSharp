@@ -2,18 +2,18 @@ using System;
 
 namespace Algorithms
 {
-    class LinkedList
+    public class LinkedList
     {
-        Node head; 
+        public Node head; 
         public class Node
         {
             //Our nodes attributes
-            public int val {get; set;}
+            public int data {get; set;}
             public Node next {get; set;}
 
             // Creates an instance of a Node with a set value and a .next pointing to null
-            public Node (int val){
-                this.val = val; 
+            public Node (int data){
+                this.data = data; 
                 this.next = null; 
             }
         }
@@ -31,10 +31,10 @@ namespace Algorithms
         }
 
         public void PrintList(){
-            Node current = head; 
-            while (current != head){
-                Console.WriteLine(current.val + " ");
-                current = current.next;
+            Node runner = head; 
+            while (runner != head){
+                Console.WriteLine(runner.data + " ");
+                runner = runner.next;
             }
             Console.WriteLine();
         }
@@ -49,6 +49,30 @@ namespace Algorithms
                 current = next; 
             }
             head = prev; 
+        }
+
+        public bool LoopDetection(Node first){
+            if (first == null){
+                return false; 
+            }
+            Node slow, fast;
+            slow = first;
+            fast = first; 
+
+            while(true){
+                slow = slow.next;
+                if(fast.next != null){
+                    fast = fast.next.next;
+                } else {
+                    return false; 
+                }
+                if (slow == null || fast == null){
+                    return false;
+                }
+                if (slow == fast){
+                    return true; 
+                }
+            } 
         }
     }
 }
