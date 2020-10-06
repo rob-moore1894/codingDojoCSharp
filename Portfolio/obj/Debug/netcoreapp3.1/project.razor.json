@@ -14390,6 +14390,12 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "Portfolio",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\Portfolio\\Views\\Index\\Index.cshtml",
+      "TargetPath": "Views\\Index\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

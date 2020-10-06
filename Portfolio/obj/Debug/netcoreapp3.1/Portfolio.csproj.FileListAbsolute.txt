@@ -18,3 +18,14 @@ C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.dll
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.pdb
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.genruntimeconfig.cache
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\bin\Debug\netcoreapp3.1\Portfolio.Views.dll
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\bin\Debug\netcoreapp3.1\Portfolio.Views.pdb
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.RazorAssemblyInfo.cache
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.RazorAssemblyInfo.cs
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.TagHelpers.input.cache
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.TagHelpers.output.cache
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.RazorCoreGenerate.cache
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.RazorTargetAssemblyInfo.cs
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.Views.pdb
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.csproj.CopyComplete
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\Portfolio\obj\Debug\netcoreapp3.1\Razor\Views\Index\Index.cshtml.g.cs
