@@ -1,26 +1,22 @@
+using System; 
 using Microsoft.AspNetCore.Mvc;
+using DojoSurvey.Models; 
 
 namespace DojoSurvey.Controllers
 {
     public class IndexController : Controller
     {
-        [HttpGet]
-        [Route("")]
-
-        public ViewResult Index()
+        [HttpGet("")]
+        public IActionResult Index()
         {
             return View(); 
         }
 
-        [HttpPost]
-        [Route("result")]
-        public IActionResult userInfo(string name, string location, string language, string comment)
+        [HttpPost("survey")]
+        public IActionResult Submission(Survey yourSurvey)
         {
-            ViewBag.Name = name;
-            ViewBag.Location = location;
-            ViewBag.Language = language;
-            ViewBag.Comment = comment;
-            return View("Result"); 
+            
+            return View("Result", yourSurvey); 
         }
     }
 }
