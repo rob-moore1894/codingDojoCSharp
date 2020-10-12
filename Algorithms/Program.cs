@@ -62,8 +62,7 @@ namespace Algorithms
         static void Main(string[] args)
         {
             // BinarySearch(new int[] { 2, 3, 4, 10, 40 }, 11); 
-            LinkedList looped = new LinkedList();
-            looped.AddNode(50); 
+             
 
         }
     }
