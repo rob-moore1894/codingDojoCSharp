@@ -30,3 +30,4 @@ C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\DojoSurvey\obj\Debug\netcoreapp3.1
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\DojoSurvey\obj\Debug\netcoreapp3.1\DojoSurvey.genruntimeconfig.cache
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\DojoSurvey\obj\Debug\netcoreapp3.1\DojoSurvey.csproj.CopyComplete
 C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\DojoSurvey\obj\Debug\netcoreapp3.1\Razor\Views\Index\Result.cshtml.g.cs
+C:\Users\Rob\Desktop\Coding Dojo\CSHARP_stack\DojoSurvey\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewImports.cshtml.g.cs

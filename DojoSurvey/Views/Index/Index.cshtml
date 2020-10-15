@@ -1,4 +1,4 @@
-
+@model DojoSurvey.Models.Survey
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,14 +10,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="survey" method="POST">
+        <form asp-action="survey" asp-controller="Index" method="POST">
             <div class="nameLine">
-                <label for="name">Your Name:</label>
-                <input type="text" name="Name" placeholder="Enter your name">
+                <label asp-for="Name">Your Name:</label>
+                <input type="text" asp-for="Name" placeholder="Enter your name"><br />
+                <span asp-validation-for="Name"></span>
             </div>
             <div class="dojoLocation">
-                <label for="location">Location:</label>
-                <select name="Location" >
+                <label asp-for="Location">Location:</label>
+                <select asp-for="Location" >
                     <option value="Arlington, VA">Arlington, VA</option>
                     <option value="Bellevue, WA">Bellevue, WA</option>
                     <option value="Boise, ID">Boise, ID</option>
@@ -30,20 +31,23 @@
                     <option value="Tulsa, OK">Tulsa, OK</option>
                     <option value="Online">Online</option>
                 </select>
+                <span asp-validation-for="Location"></span>
             </div>
             <div class="favLanguage">
-                <label for="language">Favorite Language:</label>
-                <select name="Language">
+                <label asp-for="Language">Favorite Language:</label>
+                <select asp-for="Language">
                     <option value="Java">Java</option>
                     <option value="Python">Python</option>
                     <option value="C#/.NET">C#/.NET</option>
                     <option value="MEAN">MEAN</option>
                     <option value="Ruby">Ruby</option>
                 </select>
+                <span asp-validation-for="Language"></span>
             </div>
             <div class="comment">
-                <label for="comment">Comment (optional):</label><br />
-                <textarea type="text" name="Comment" id="userComments"></textarea>
+                <label asp-for="Comment">Comment (optional):</label><br />
+                <textarea type="text" asp-for="Comment" id="userComments"></textarea>
+                <span asp-validation-for="Comment"></span>
             </div>
             <div class="button">
                 <input id="submit" type="submit" value="Submit">

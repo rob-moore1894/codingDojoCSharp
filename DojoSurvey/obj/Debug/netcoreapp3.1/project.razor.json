@@ -14397,6 +14397,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\DojoSurvey\\Views\\Shared\\_ViewImports.cshtml",
+      "TargetPath": "Views\\Shared\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\DojoSurvey\\Views\\Index\\Result.cshtml",
       "TargetPath": "Views\\Index\\Result.cshtml",
       "FileKind": "mvc"
