@@ -1,0 +1,32 @@
+@model Info
+
+@{
+    ViewData["Title"] = "Dojo Survey Index";
+}
+
+<body>
+    <div class="wrapper">
+        <h3>Submitted Info</h3>
+        <div id="display">
+            <div class="displayName">
+                <h5>Name:</h5>
+                <h6>@Model.Name</h6>
+            </div>
+            <div class="displayLocation">
+                <h5>Dojo Location:</h5>
+                <h6>@Model.Location</h6>
+            </div>
+            <div class="displayLanguage">
+                <h5>Favorite Language:</h5>
+                <h6>@Model.Language</h6>
+            </div>
+            <div class="displayComment">
+                <h5>Comment:</h5>
+                <h6>@Model.Comment</h6>
+            </div>
+        </div>
+        <div class="button">
+            <a href="/"><button id="back">Go Back</button></a>
+        </div>
+    </div>
+</body>
