@@ -1,0 +1,17 @@
+@model AllModels
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>IsHot</th>
+    </tr>
+    @{
+        foreach(Drink d in Model.AllDrinks)
+        {
+            <tr>
+                <td>@d.Name</td>
+                <td>@d.IsHot</td>
+            </tr>
+        }
+    }
+</table>

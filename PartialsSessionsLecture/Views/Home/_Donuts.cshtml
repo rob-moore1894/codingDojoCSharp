@@ -1,0 +1,17 @@
+@model AllModels
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>IsFilled</th>
+    </tr>
+    @{
+        foreach(Donut d in Model.AllDonuts)
+        {
+            <tr>
+                <td>@d.Name</td>
+                <td>@d.IsFilled</td>
+            </tr>
+        }
+    }
+</table>

@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="row">
+        <div class="col-sm-5">
+            <h2>Add a Donut</h2>
+            <form action="addDonut" method="POST">
+                <div class="form-group">
+                    <label for="Name">Donut Name</label>
+                    <input class="form-control" type="text" name="Name">
+                </div>
+                <label for="IsFilled">Is Filled?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="IsFilled" value="true">
+                    <label class="form-check-label" for="IsFilled">True</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="IsFilled" value="false">
+                    <label class="form-check-label" for="IsFilled">False</label>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+            <hr>
+            <partial name="_Donuts"/>
+            
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+            <h2>Add a Drink</h2>
+            <form action="addDrink" method="POST">
+                <div class="form-group">
+                    <label for="Name">Drink Name</label>
+                    <input class="form-control" type="text" name="Name">
+                </div>
+                <label for="IsHot">Is Hot?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="IsHot" value="true">
+                    <label class="form-check-label" for="IsHot">True</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="IsHot" value="false">
+                    <label class="form-check-label" for="IsHot">False</label>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+            <hr>
+            <partial name="_Drinks"/>
+        </div>
+    </div>
+</div>
