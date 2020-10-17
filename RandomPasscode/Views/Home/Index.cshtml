@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Random passcode (passcode #1)</h1>
+    <form action="generate" method="post">
+        <div class="border p-2">
+            <h2>@ViewBag.randomStr</h2>
+        </div>
+        <input type="submit" value="Generate">
+    </form>
+</div>
