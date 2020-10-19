@@ -21,17 +21,17 @@ namespace PartialsSessionsLecture.Controllers
         }
 
         [HttpPost("addDonut")]
-        public PartialViewResult addDonut(Donut newDonut)
+        public IActionResult addDonut(Donut newDonut)
         {
             allmodels.AllDonuts.Add(newDonut);
-            return PartialView("Index");
+            return View("Index");
         }
 
         [HttpPost("addDrink")]
-        public PartialViewResult addDrink(Drink newDrink)
+        public IActionResult addDrink(Drink newDrink)
         {
             allmodels.AllDrinks.Add(newDrink);
-            return PartialView("Index");
+            return View("Index");
         }
 
     }
