@@ -1,0 +1,15 @@
+﻿@model List<Octopus>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">All Octopi</h1>
+    <ul style="list-style-type: none;">
+        @foreach(Octopus oct in Model){
+            <li><a href="octopus/@oct.OctopusId">@oct.Name</a></li>
+        }
+    </ul>
+    <a href="octopus/new" class="btn btn-primary">Create a New Octopus</a>
+    <a href="tentacle/new" class="btn btn-success">Create a New Tentacle</a>
+</div>
