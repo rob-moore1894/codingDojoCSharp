@@ -1,21 +1,22 @@
-
+@model Dish
 @{
     ViewData["Title"] = "Home Page";
 }
 <a href="/"><u>Home</u></a>
 <div class="text-center">
-    <h1 class="display-4 mt-4 mb-4">@ViewBag.Name</h1>
-    <h2 class="display-4 mt-4 mb-4">@ViewBag.Chef</h2>
+    <h1 class="display-4 mt-4 mb-4">@Model.Name</h1>
+    <h2 class="display-4 mt-4 mb-4">@Model.Chef</h2>
     <hr>
-    <p>@ViewBag.Description</p>
+    <p>@Model.Description</p>
 </div>
 
-<p><strong>Calories: </strong>@ViewBag.Calories</p>
+<p><strong>Calories: </strong>@Model.Calories</p>
 <br>
-<p><strong>Tastiness: </strong>@ViewBag.Tastiness</p>
+<p><strong>Tastiness: </strong>@Model.Tastiness</p>
 
 <div class="row justify-content-around">
-    <button type="button" class="btn btn-danger" onclick="location.href='@Url.Action("delete/@ViewBag.DishId", "Home")'" >Delete</button>
+    <a href="/delete/@Model.DishId" class="btn btn-danger">Delete</a>
+    <a href="/edit/@Model.DishId" class="btn btn-success">Edit</a>
 </div>
 
 

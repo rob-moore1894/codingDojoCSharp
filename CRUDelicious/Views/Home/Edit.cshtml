@@ -1,0 +1,51 @@
+@model Dish
+@{
+    ViewData["Title"] = "Edit Dish Page";
+}
+
+<div class="container">
+    <h1 class="text-center mt-4">Edit @Model.Name</h1>
+    <a href="/" class="mb-4"><u>Home</u></a>
+    <form asp-action="editDish" method="POST">
+        <div class="form-row mt-6 pt-6">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="@Model.Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Chef">Chef</label>
+                    <input asp-for="Chef" class="form-control" placeholder="@Model.Chef">
+                    <span asp-validation-for="Chef" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Calories">Calories</label>
+                    <input asp-for="Calories" class="form-control" placeholder="@Model.Calories">
+                    <span asp-validation-for="Calories" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="Tastiness">Tastiness</label>
+                    <select asp-for="Tastiness" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <span asp-validation-for="Tastiness" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="Description">Description</label>
+                    <textarea asp-for="Description" class="form-control p-0" style = "height: 13rem" placeholder="@Model.Description"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Edit Dish</button>
+            </div>
+        </div>
+    </form>
+</div>

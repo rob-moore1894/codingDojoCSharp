@@ -21,45 +21,70 @@ namespace CRUDelicious.Controllers
         public IActionResult Index()
         {
             // All Dishes
-            ViewBag.AllDishes = _context.Dishes.OrderByDescending(dish => dish.CreatedAt).ToList();
+            List<Dish> AllDishes = _context.Dishes.OrderByDescending(dish => dish.CreatedAt).ToList();
+            return View(AllDishes);
+        }
+
+        [HttpGet("dish/new")]
+        public IActionResult New()
+        {
             return View();
         }
 
-        [HttpGet("new")]
-        [HttpPost("new")]
-        public IActionResult New(Dish newDish)
+        [HttpPost("dish/new/submit")]
+        public IActionResult CreateDish(Dish newDish)
         {
             if(ModelState.IsValid)
             {
                 _context.Add(newDish);
                 _context.SaveChanges();
-                return RedirectToAction("Index"); 
+                return RedirectToAction("Index");
             } else {
                 return View("New");
             }
+
         }
 
         [HttpGet("{dishId}")]
         public IActionResult Show(int dishId)
         {
-            ViewBag.OneDish = _context.Dishes.Where(dish => dish.DishId == dishId);
-            return View(); 
+            Dish OneDish = _context.Dishes.FirstOrDefault(dish => dish.DishId == dishId);
+            return View(OneDish); 
         }
 
-        [HttpPost("delete/{dishId}")]
+        [HttpGet("delete/{dishId}")]
         public IActionResult DeleteDish(int dishId)
         {
             Dish DishToDelete = _context.Dishes.SingleOrDefault(dish => dish.DishId == dishId); 
-            _context.Dishes.Remove(DishToDelete);
+            _context.Remove(DishToDelete);
             _context.SaveChanges();
             return RedirectToAction("Index"); 
         }
 
-        [HttpPost("edit/{dishId}")]
-        public IActionResult EditDish(int dishId)
+        [HttpGet("edit/{dishId}")]
+        public IActionResult Edit(int dishId)
         {
             Dish DishToEdit = _context.Dishes.FirstOrDefault(dish => dish.DishId == dishId);
-            return RedirectToAction("Edit");
+            return View(DishToEdit);
+        }
+
+        [HttpPost("edit/{dishId}/submit")]
+        public IActionResult EditDish(int dishId, Dish editDish)
+        {
+            if(ModelState.IsValid)
+            {
+                Dish DishToEdit = _context.Dishes.FirstOrDefault(dish => dish.DishId == dishId);
+                DishToEdit.Name = editDish.Name;
+                DishToEdit.Chef = editDish.Chef;
+                DishToEdit.Calories = editDish.Calories;
+                DishToEdit.Tastiness = editDish.Tastiness;
+                DishToEdit.Description = editDish.Description;
+                DishToEdit.UpdatedAt = editDish.UpdatedAt;
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            } else {
+                return View("Edit");
+            }
         }
         
     }
