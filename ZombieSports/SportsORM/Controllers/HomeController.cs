@@ -87,6 +87,7 @@ namespace SportsORM.Controllers
         [HttpGet("level_2")]
         public IActionResult Level2()
         {
+            
             return View();
         }
 

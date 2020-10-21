@@ -50,8 +50,7 @@ namespace ChefsNDishes.Controllers
         [HttpGet("dishes")]
         public IActionResult Dishes()
         {
-            List<Dish> AllDishes = _context.Dishes.ToList();
-            ViewBag.AllChefs = _context.Chefs.Include(c => c.Dishes).ToList();
+            List<Dish> AllDishes = _context.Dishes.Include(c => c.Owner).ToList();
             return View(AllDishes); 
         }
 
