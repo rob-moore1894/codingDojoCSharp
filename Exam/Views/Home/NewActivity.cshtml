@@ -1,0 +1,38 @@
+@model Activity
+
+<h2>Create an Activity</h2>
+<form asp-action="NewActivity" method="POST">
+    <div class="row">
+        <div class="col form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-control">
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="col form-group">
+            <label asp-for="Date"></label>
+            <input asp-for="Date" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 form-group">
+            <label asp-for="Duration"></label>
+            <input asp-for="Duration" class="form-control">
+        </div>
+        <div class="col-4 form-group">
+            <label for="timeUnit"></label>
+            <select name="timeUnit" class="form-control mt-2">
+                <option value="Hours">Hours</option>
+                <option value="Minutes">Minutes</option>
+                <option value="Days">Days</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col form-group">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" class="form-control">
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+    </div>
+    <input type="submit" value="Create Activity">
+</form>
