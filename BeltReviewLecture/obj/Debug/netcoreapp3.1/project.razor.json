@@ -14397,8 +14397,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Home\\AddGig.cshtml",
+      "TargetPath": "Views\\Home\\AddGig.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Home\\_login.cshtml",
+      "TargetPath": "Views\\Home\\_login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Home\\AllGigs.cshtml",
+      "TargetPath": "Views\\Home\\AllGigs.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Home\\OneGig.cshtml",
+      "TargetPath": "Views\\Home\\OneGig.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Home\\Edit.cshtml",
+      "TargetPath": "Views\\Home\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14412,18 +14437,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Home\\Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Home\\Thanks.cshtml",
+      "TargetPath": "Views\\Home\\Thanks.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\Rob\\Desktop\\Coding Dojo\\CSHARP_stack\\BeltReviewLecture\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],
