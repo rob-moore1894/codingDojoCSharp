@@ -1,0 +1,25 @@
+
+<div class="row justify-content-around">
+    <h1>@ViewBag.OneInterest.Title</h1>
+    <form action="/join" method="POST">
+        <input type="hidden" name="UserId" value="@ViewBag.User">
+        <input type="hidden" name="InterestId" value="@ViewBag.OneInterest.InterestId">
+        <input type="submit" value="Join" class="btn btn-outline-success">
+    </form>
+</div>
+
+<div class="container p-2">
+    <h3>Event Coordinator: <em>@ViewBag.IntPart.Coordinator.Name</em></h3>
+    <h3>Description:</h3>
+    <div>
+        <p>@ViewBag.OneInterest.Description</p>
+    </div>
+    <h3>Participants:</h3>
+    <ul>
+        @{
+            foreach(InterestHistory a in ViewBag.IntPart.InterestHistory){
+                <li><em>@a.Participant.Name</em></li>
+            }
+        }
+    </ul>
+</div>
