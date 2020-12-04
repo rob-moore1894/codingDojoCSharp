@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic; 
 
 namespace BasicThirteen
 {
@@ -174,6 +175,15 @@ namespace BasicThirteen
             divider();
             return result; 
         }
+
+        public static void multiplicationTable(){
+            int [,] multTable = new int[10,10]; 
+            for(int i = 1; i < multTable.Length; i++){
+
+            }
+            Console.WriteLine(multTable);
+        }
+
         static void Main(string[] args)
         {
             PrintNumbers();
@@ -190,6 +200,7 @@ namespace BasicThirteen
             MinMaxAverage(testArr);
             ShiftValues(testArr);
             NumToString(new int[] {-1, -3, 2});
+            multiplicationTable();
         }
     }
 }
